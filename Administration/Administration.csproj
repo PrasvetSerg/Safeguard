@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F35AFBB9-A03F-4F0E-9BF9-9334E4E4597E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Administration</RootNamespace>
+    <AssemblyName>Administration</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormGroupEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGroupEdit.designer.cs">
+      <DependentUpon>FormGroupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGroupList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGroupList.Designer.cs">
+      <DependentUpon>FormGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcedureList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcedureList.Designer.cs">
+      <DependentUpon>FormProcedureList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserGroupEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserGroupEdit.designer.cs">
+      <DependentUpon>FormUserGroupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsersAd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsersAd.Designer.cs">
+      <DependentUpon>FormUsersAd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsersEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsersEdit.designer.cs">
+      <DependentUpon>FormUsersEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UcGroupList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcGroupList.Designer.cs">
+      <DependentUpon>UcGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcProcedureList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcProcedureList.Designer.cs">
+      <DependentUpon>UcProcedureList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcCommandList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcCommandList.Designer.cs">
+      <DependentUpon>UcCommandList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcedureEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcedureEdit.designer.cs">
+      <DependentUpon>FormProcedureEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCommandEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCommandEdit.designer.cs">
+      <DependentUpon>FormCommandEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcAclList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcAclList.Designer.cs">
+      <DependentUpon>UcAclList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcUserGroupList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcUserGroupList.Designer.cs">
+      <DependentUpon>UcUserGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcUserList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcUserList.Designer.cs">
+      <DependentUpon>UcUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserList.Designer.cs">
+      <DependentUpon>FormUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAclList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAclList.Designer.cs">
+      <DependentUpon>FormAclList.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormGroupEdit.resx">
+      <DependentUpon>FormGroupEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGroupList.resx">
+      <DependentUpon>FormGroupList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcedureList.resx">
+      <DependentUpon>FormProcedureList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserGroupEdit.resx">
+      <DependentUpon>FormUserGroupEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsersAd.resx">
+      <DependentUpon>FormUsersAd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsersEdit.resx">
+      <DependentUpon>FormUsersEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UserControls\UcGroupList.resx">
+      <DependentUpon>UcGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcProcedureList.resx">
+      <DependentUpon>UcProcedureList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcCommandList.resx">
+      <DependentUpon>UcCommandList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcedureEdit.resx">
+      <DependentUpon>FormProcedureEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCommandEdit.resx">
+      <DependentUpon>FormCommandEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcAclList.resx">
+      <DependentUpon>UcAclList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcUserGroupList.resx">
+      <DependentUpon>UcUserGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcUserList.resx">
+      <DependentUpon>UcUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserList.resx">
+      <DependentUpon>FormUserList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAclList.resx">
+      <DependentUpon>FormAclList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBConnection\DBConnection.csproj">
+      <Project>{2F302FAE-D62A-4DC7-B66D-56C05C15A3DD}</Project>
+      <Name>DBConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExceptionHandler\ExceptionHandler.csproj">
+      <Project>{AC0655AF-D585-4E77-ADDD-14BFC8BF6D99}</Project>
+      <Name>ExceptionHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceTypes\ServiceTypes.csproj">
+      <Project>{087AB03E-CBAA-4F83-931B-3BC7D1B941E3}</Project>
+      <Name>ServiceTypes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

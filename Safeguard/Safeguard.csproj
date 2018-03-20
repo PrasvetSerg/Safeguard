@@ -1,0 +1,1026 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B233CA56-C750-434F-85C2-7143E103A9E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Safeguard</RootNamespace>
+    <AssemblyName>Safeguard</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>\\cms\c%24\inetpub\wwwroot\Soft\Safeguard17\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://soft/safeguard17/</InstallUrl>
+    <ProductName>Охрана. Учёт нарушений режима</ProductName>
+    <PublisherName>Naftan</PublisherName>
+    <ApplicationRevision>31</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>http://soft/</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F0051501B36CB8692625C1DB90797516BC3D02ED</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Safeguard_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>watch.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Win.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Reporting.Extensions, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessForm\Catalogs\FormPostEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormPostEdit.designer.cs">
+      <DependentUpon>FormPostEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormPostManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormPostManager.designer.cs">
+      <DependentUpon>FormPostManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcOrganizationList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcOrganizationList.designer.cs">
+      <DependentUpon>UcOrganizationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOrganizationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOrganizationEdit.designer.cs">
+      <DependentUpon>FormOrganizationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOrganizationManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOrganizationManager.designer.cs">
+      <DependentUpon>FormOrganizationManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcOffenseTypeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcOffenseTypeList.designer.cs">
+      <DependentUpon>UcOffenseTypeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOffenseTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOffenseTypeEdit.designer.cs">
+      <DependentUpon>FormOffenseTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOffenseTypeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOffenseTypeManager.designer.cs">
+      <DependentUpon>FormOffenseTypeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcOffenderList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcOffenderList.designer.cs">
+      <DependentUpon>UcOffenderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOffenderEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOffenderEdit.designer.cs">
+      <DependentUpon>FormOffenderEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOffenderManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormOffenderManager.designer.cs">
+      <DependentUpon>FormOffenderManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcPostList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcPostList.designer.cs">
+      <DependentUpon>UcPostList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\FormGroupEmployeeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\FormGroupEmployeeEdit.designer.cs">
+      <DependentUpon>FormGroupEmployeeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\FormOffenseManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\FormOffenseManager.designer.cs">
+      <DependentUpon>FormOffenseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\FormSelectValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\FormSelectValues.Designer.cs">
+      <DependentUpon>FormSelectValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportFromToDatetime.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportFromToDatetime.Designer.cs">
+      <DependentUpon>ReportFromToDatetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportTest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportTest.Designer.cs">
+      <DependentUpon>ReportTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportGeneralFromToDatetime.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportGeneralFromToDatetime.Designer.cs">
+      <DependentUpon>ReportGeneralFromToDatetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportTalonOnDate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportTalonOnDate.Designer.cs">
+      <DependentUpon>ReportTalonOnDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportOffenseByOrganizationByPeriod.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportOffenseByOrganizationByPeriod.Designer.cs">
+      <DependentUpon>ReportOffenseByOrganizationByPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportGeneralByGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\Reports\ReportGeneralByGroup.Designer.cs">
+      <DependentUpon>ReportGeneralByGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\UserControls\UcGroupEmployeeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\UserControls\UcGroupEmployeeList.designer.cs">
+      <DependentUpon>UcGroupEmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\UserControls\UcOffenseList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\UserControls\UcOffenseList.designer.cs">
+      <DependentUpon>UcOffenseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\FormOffenseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\FormOffenseEdit.designer.cs">
+      <DependentUpon>FormOffenseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\FormGroupEmployeeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Journals\FormGroupEmployeeManager.designer.cs">
+      <DependentUpon>FormGroupEmployeeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportMonth.designer.cs">
+      <DependentUpon>FormReportMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportFromToDatetime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportFromToDatetime.designer.cs">
+      <DependentUpon>FormReportFromToDatetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\ReportFromToDateByGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\ReportFromToDateByGroup.designer.cs">
+      <DependentUpon>ReportFromToDateByGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormDepartmentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormDepartmentEdit.designer.cs">
+      <DependentUpon>FormDepartmentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormDepartmentFacilityManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormDepartmentFacilityManager.designer.cs">
+      <DependentUpon>FormDepartmentFacilityManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcDepartmentTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcDepartmentTree.designer.cs">
+      <DependentUpon>UcDepartmentTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcFacilityList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcFacilityList.designer.cs">
+      <DependentUpon>UcFacilityList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormFacilityEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormFacilityEdit.designer.cs">
+      <DependentUpon>FormFacilityEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcKppList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcKppList.designer.cs">
+      <DependentUpon>UcKppList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormKppEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormKppEdit.designer.cs">
+      <DependentUpon>FormKppEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormKppManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormKppManager.designer.cs">
+      <DependentUpon>FormKppManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcEmployeeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcEmployeeList.designer.cs">
+      <DependentUpon>UcEmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormEmployeeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormEmployeeEdit.designer.cs">
+      <DependentUpon>FormEmployeeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormEmployeeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormEmployeeManager.designer.cs">
+      <DependentUpon>FormEmployeeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcGroupList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\UserControls\UcGroupList.designer.cs">
+      <DependentUpon>UcGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormGroupEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormGroupEdit.designer.cs">
+      <DependentUpon>FormGroupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormGroupManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Catalogs\FormGroupManager.designer.cs">
+      <DependentUpon>FormGroupManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportFromToDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportFromToDate.designer.cs">
+      <DependentUpon>FormReportFromToDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportCalcDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportCalcDate.designer.cs">
+      <DependentUpon>FormReportCalcDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportComparedPeriods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportComparedPeriods.designer.cs">
+      <DependentUpon>FormReportComparedPeriods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportAllocationForDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportAllocationForDate.designer.cs">
+      <DependentUpon>FormReportAllocationForDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportOnDateByFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportOnDateByFactory.designer.cs">
+      <DependentUpon>FormReportOnDateByFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportFromToDateByOrganization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Messages\FormReportFromToDateByOrganization.designer.cs">
+      <DependentUpon>FormReportFromToDateByOrganization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Reports\FormStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Reports\FormStatistic.designer.cs">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Settings\FormApplicationSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Settings\FormApplicationSettings.Designer.cs">
+      <DependentUpon>FormApplicationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\Settings\FormLogOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\Settings\FormLogOn.designer.cs">
+      <DependentUpon>FormLogOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\UserControl\DataSelectInPlace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\UserControl\DataSelectInPlace.Designer.cs">
+      <DependentUpon>DataSelectInPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm\UserControl\DataSelectOutOfPlace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessForm\UserControl\DataSelectOutOfPlace.Designer.cs">
+      <DependentUpon>DataSelectOutOfPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\AnswerVariants.cs" />
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceForm\FormGeneralLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceForm\FormGeneralLogList.Designer.cs">
+      <DependentUpon>FormGeneralLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForm\FormErrorLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceForm\FormErrorLogList.Designer.cs">
+      <DependentUpon>FormErrorLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForm\UcPager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServiceForm\UcPager.Designer.cs">
+      <DependentUpon>UcPager.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormPostEdit.resx">
+      <DependentUpon>FormPostEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormPostManager.resx">
+      <DependentUpon>FormPostManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\UserControls\UcOrganizationList.resx">
+      <DependentUpon>UcOrganizationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormOrganizationEdit.resx">
+      <DependentUpon>FormOrganizationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormOrganizationManager.resx">
+      <DependentUpon>FormOrganizationManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\UserControls\UcOffenseTypeList.resx">
+      <DependentUpon>UcOffenseTypeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormOffenseTypeEdit.resx">
+      <DependentUpon>FormOffenseTypeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormOffenseTypeManager.resx">
+      <DependentUpon>FormOffenseTypeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\UserControls\UcOffenderList.resx">
+      <DependentUpon>UcOffenderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormOffenderEdit.resx">
+      <DependentUpon>FormOffenderEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormOffenderManager.resx">
+      <DependentUpon>FormOffenderManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\UserControls\UcPostList.resx">
+      <DependentUpon>UcPostList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\FormGroupEmployeeEdit.resx">
+      <DependentUpon>FormGroupEmployeeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\FormOffenseManager.resx">
+      <DependentUpon>FormOffenseManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\FormSelectValues.resx">
+      <DependentUpon>FormSelectValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\Reports\ReportFromToDatetime.resx">
+      <DependentUpon>ReportFromToDatetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\Reports\ReportTest.resx">
+      <DependentUpon>ReportTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\Reports\ReportGeneralFromToDatetime.resx">
+      <DependentUpon>ReportGeneralFromToDatetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\Reports\ReportTalonOnDate.resx">
+      <DependentUpon>ReportTalonOnDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\Reports\ReportOffenseByOrganizationByPeriod.resx">
+      <DependentUpon>ReportOffenseByOrganizationByPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\Reports\ReportGeneralByGroup.resx">
+      <DependentUpon>ReportGeneralByGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\UserControls\UcGroupEmployeeList.resx">
+      <DependentUpon>UcGroupEmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\UserControls\UcOffenseList.resx">
+      <DependentUpon>UcOffenseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\FormOffenseEdit.resx">
+      <DependentUpon>FormOffenseEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Journals\FormGroupEmployeeManager.resx">
+      <DependentUpon>FormGroupEmployeeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Messages\FormReportMonth.resx">
+      <DependentUpon>FormReportMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Messages\FormReportFromToDatetime.resx">
+      <DependentUpon>FormReportFromToDatetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Messages\ReportFromToDateByGroup.resx">
+      <DependentUpon>ReportFromToDateByGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormDepartmentEdit.resx">
+      <DependentUpon>FormDepartmentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormDepartmentFacilityManager.resx">
+      <DependentUpon>FormDepartmentFacilityManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\UserControls\UcDepartmentTree.resx">
+      <DependentUpon>UcDepartmentTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\UserControls\UcFacilityList.resx">
+      <DependentUpon>UcFacilityList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormFacilityEdit.resx">
+      <DependentUpon>FormFacilityEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\UserControls\UcKppList.resx">
+      <DependentUpon>UcKppList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormKppEdit.resx">
+      <DependentUpon>FormKppEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormKppManager.resx">
+      <DependentUpon>FormKppManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\UserControls\UcEmployeeList.resx">
+      <DependentUpon>UcEmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormEmployeeEdit.resx">
+      <DependentUpon>FormEmployeeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormEmployeeManager.resx">
+      <DependentUpon>FormEmployeeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\UserControls\UcGroupList.resx">
+      <DependentUpon>UcGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormGroupEdit.resx">
+      <DependentUpon>FormGroupEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Catalogs\FormGroupManager.resx">
+      <DependentUpon>FormGroupManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Messages\FormReportFromToDate.resx">
+      <DependentUpon>FormReportFromToDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Messages\FormReportCalcDate.resx">
+      <DependentUpon>FormReportCalcDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Messages\FormReportComparedPeriods.resx">
+      <DependentUpon>FormReportComparedPeriods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Messages\FormReportAllocationForDate.resx">
+      <DependentUpon>FormReportAllocationForDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Messages\FormReportOnDateByFactory.resx">
+      <DependentUpon>FormReportOnDateByFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Messages\FormReportFromToDateByOrganization.resx">
+      <DependentUpon>FormReportFromToDateByOrganization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Reports\FormStatistic.resx">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Settings\FormApplicationSettings.resx">
+      <DependentUpon>FormApplicationSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\Settings\FormLogOn.resx">
+      <DependentUpon>FormLogOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\UserControl\DataSelectInPlace.resx">
+      <DependentUpon>DataSelectInPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm\UserControl\DataSelectOutOfPlace.resx">
+      <DependentUpon>DataSelectOutOfPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ServiceForm\FormGeneralLogList.resx">
+      <DependentUpon>FormGeneralLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForm\FormErrorLogList.resx">
+      <DependentUpon>FormErrorLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForm\UcPager.resx">
+      <DependentUpon>UcPager.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Safeguard_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopMenu.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainPanel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Administration\Administration.csproj">
+      <Project>{F35AFBB9-A03F-4F0E-9BF9-9334E4E4597E}</Project>
+      <Name>Administration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBConnection\DBConnection.csproj">
+      <Project>{2F302FAE-D62A-4DC7-B66D-56C05C15A3DD}</Project>
+      <Name>DBConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExceptionHandler\ExceptionHandler.csproj">
+      <Project>{AC0655AF-D585-4E77-ADDD-14BFC8BF6D99}</Project>
+      <Name>ExceptionHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceTypes\ServiceTypes.csproj">
+      <Project>{087AB03E-CBAA-4F83-931B-3BC7D1B941E3}</Project>
+      <Name>ServiceTypes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn key1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkedlistboxcontrol.png" />
+    <Content Include="watch.ico" />
+    <None Include="Resources\Calculator.png" />
+    <Content Include="ru\DevExpress.Data.v10.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ru\DevExpress.PivotGrid.v10.2.Core.resources.dll" />
+    <Content Include="ru\DevExpress.Utils.v10.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ru\DevExpress.XtraBars.v10.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ru\DevExpress.XtraCharts.v10.2.resources.dll" />
+    <Content Include="ru\DevExpress.XtraEditors.v10.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ru\DevExpress.XtraGrid.v10.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ru\DevExpress.XtraLayout.v10.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ru\DevExpress.XtraNavBar.v10.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ru\DevExpress.XtraReports.v10.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ru\DevExpress.XtraScheduler.v10.2.resources.dll" />
+    <Content Include="ru\DevExpress.XtraTreeList.v10.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.Charts.v17.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.ExpressApp.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.ExpressApp.Win.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.OfficeSkins.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Persistent.Base.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v17.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v17.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpo.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v17.2.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraScheduler.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraScheduler.v17.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v17.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

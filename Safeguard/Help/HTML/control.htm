@@ -1,0 +1,85 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head><script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if(top.frames.length==0) { top.location.href="index.html?control.htm"; }
+else { parent.quicksync('a2.2'); }
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script>
+   <title>Поля ввода данных</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#649CCC">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Поля ввода данных</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="introduction.htm">Top</a>&nbsp;
+     <a href="overview.htm">Previous</a>&nbsp;
+     <a href="grid.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>Поля ввода данных служат ручного заполнения их данными, на основе произвольного ввода, выбора из списка имеющихся значений или на основе информации из внешнего источника.</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-style: italic; font-weight: bold; color: #333399;">Текстовое поле </span></p>
+<p>&nbsp;</p>
+<p>Простое текстовое поле, обычно служит для ввода нетепизированных данных. Может ограничиваться максимально возможной длинной вводимых данных, языком ввода, наличием только литеральных символов.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="controltextedit.png" width="524" height="28" border="0" alt="controlTextEdit"></p>
+<p style="text-align: center;"><span style="font-style: italic;">Пример простого текстового поля</span></p>
+<p style="text-align: center;"><span style="font-style: italic;">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-style: italic; font-weight: bold; color: #333399;">Текстовое поле с маской ввода</span></p>
+<p>&nbsp;</p>
+<p>Текстовое поле с заданной маской ввода позволяет вводить информацию только заданного формата. Требуемые для заполнения позиции подсвечиваются знаком нижнего подчёркивания. Если поле заполнено не полностью или введённые данные не соответствуют маске ввода перед полем ввода отображается пиктограмма белого креста на красном кружке. Маскирование вводимых данных позволяет стандартизировать ввод, улучшить отображение и восприятие данных, исключить некоторые ошибки ввода.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="controlmaskedtextedit.png" width="198" height="29" border="0" alt="controlMaskedTextEdit"></p>
+<p style="text-align: center;"><span style="font-style: italic;">Пример текстового поля с маской</span></p>
+<p><span style="font-size: 14pt; font-style: italic; font-weight: bold; color: #333399;">Поле со списком значений</span></p>
+<p style="text-align: center;"><span class="f_ImageCaption">&nbsp;</span></p>
+<p>Поле с заданным списком значений позволяет использовать только имеющиеся значения для заполнения поля. Обычно это недоступные для изменения пользователем значения заданные на этапе создания программы. Для выбора требуемого значения поля можно начать непосредственный ввод с клавиатуры, и при наличие так же начинающихся элементов, будет предложено завершение фразы, выделенное жёлтым цветом. Либо с помощью стрелки вниз в конце поля и пролистывания открывшегося списка выбрать требуемое значение.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="controlcombobox.png" width="440" height="95" border="0" alt="controlComboBox"></p>
+<p style="text-align: center;"><span style="font-style: italic;">Пример поля с выбором значения из списка</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-style: italic; font-weight: bold; color: #333399;">Поле с внутренним заполнением</span></p>
+<p>&nbsp;</p>
+<p>Поле связанное со справочником, аналогично полю со списком значений, позволяет заполнять данные только значениями из имеющегося списка вариантов, но взятых из справочника, Управление которым доступно пользователю. А так же имеет большую информативность, возможность сортировки и поиска значений.</p>
+<p>Переход к просмотру справочника осуществляется нажатием пиктограммы с тремя точками в конце поля. В результате открывается форма со <a href="cataloglist.htm">списком записей</a> справочника, в которой можно так же выбрать значение двойным нажатием кнопки мыши или скорректировать список.</p>
+<p>Чтобы очистить значение поля следует нажать крестик в конце поля.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="controlselectinplace.png" width="262" height="152" border="0" alt="ControlSelectInPlace"></p>
+<p style="text-align: center;"><span style="font-style: italic;">Пример поля связанного со справочником</span></p>
+<p style="text-align: center;"><span style="font-style: italic;">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-style: italic; font-weight: bold; color: #333399;">Поле с внешним заполнением</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p>Ввод данных в поле с внешним заполнением осуществляется нажатием пиктограммы трёх точек в конце поля и выбором двойным нажатием кнопки мыши требуемой записи из <a href="cataloglist.htm">списка записей</a> открывшейся формы. Выбранная запись после закрытия окна со списком заполнит поле ввода данных.</p>
+<p>Чтобы очистить значение поля следует нажать крестик в конце поля.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="controlselectoutofplace.png" width="459" height="26" border="0" alt="controlSelectOutOfPlace"></p>
+<p style="text-align: center;"><span style="font-style: italic;">Пример поля с внешним заполнением</span></p>
+
+</td></tr></table>
+
+</body>
+</html>
