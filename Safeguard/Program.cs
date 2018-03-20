@@ -20,6 +20,7 @@ namespace Safeguard
             Application.SetCompatibleTextRenderingDefault(false);
             DevExpress.Skins.SkinManager.EnableFormSkins();    
             Application.Run(new FormMain());
+
         }
 
         private static void UIThreadException(object sender, System.Threading.ThreadExceptionEventArgs t)
